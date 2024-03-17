@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Definição do idioma do documento -->
+<head>
+  <meta charset="UTF-8"> <!-- Configuração do conjunto de caracteres -->
+  <title>Kanban Board</title> <!-- Título da página -->
+  <link rel="stylesheet" href="style.css"> <!-- Importa o arquivo de estilo externo -->
+</head>
+<body>
+  <header> <!-- Cabeçalho da página -->
+    <h1>Kanban</h1> <!-- Título principal -->
+    <nav> <!-- Menu de navegação -->
+      <a href="#">Workspaces</a> <!-- Link para a seção de espaços de trabalho -->
+      <a href="#">Recent</a> <!-- Link para a seção de recentes -->
+      <a href="#">Starred</a> <!-- Link para a seção de marcados -->
+    </nav>
+    <input type="text" placeholder="Pesquisar"> <!-- Campo de entrada para pesquisa -->
+  </header>
+  <div class="container"> <!-- Contêiner principal -->
+    <div class="columns"> <!-- Divisão das colunas -->
+      <div class="column to-do sortable" id="to-do"> <!-- Coluna "To Do" (Para Fazer) -->
+        <h2>To Do</h2> <!-- Título da coluna -->
+      </div>
+      <div class="column doing sortable" id="doing"> <!-- Coluna "Doing" (Fazendo) -->
+        <h2>Doing</h2> <!-- Título da coluna -->
+      </div>
+      <div class="column done sortable" id="done"> <!-- Coluna "Done" (Feito) -->
+        <h2>Done</h2> <!-- Título da coluna -->
+      </div>
+    </div> 
+    <div class="btn">Adicionar Cartão</div> <!-- Botão para adicionar um novo cartão -->
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script> <!-- Importa a biblioteca Sortable -->
+  <script src="script.js"></script> <!-- Importa o arquivo de script -->
+</body>
+</html>

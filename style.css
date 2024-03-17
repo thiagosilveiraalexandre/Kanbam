@@ -1,0 +1,119 @@
+/* Reset de estilos básicos */
+body {
+  font-family: sans-serif; /* Define a fonte padrão */
+  margin: 0; /* Remove as margens padrão */
+  padding: 0; /* Remove os preenchimentos padrão */
+}
+
+/* Estilos do cabeçalho */
+header {
+  background-color: #181818; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  padding: 30px; /* Espaçamento interno */
+}
+
+header h1 {
+  margin: 0; /* Remove a margem do título principal */
+}
+
+header nav {
+  float: right; /* Alinha os links de navegação à direita */
+}
+
+header nav a {
+  margin-right: 10px; /* Espaçamento entre os links */
+  text-decoration: none; /* Remove a decoração do link */
+  color: #fff; /* Cor do texto */
+}
+
+header input {
+  float: right; /* Alinha o campo de pesquisa à direita */
+  margin-right: 10px; /* Espaçamento entre o campo de pesquisa e os links */
+  padding: 5px; /* Espaçamento interno */
+  border: 1px solid #ccc; /* Borda */
+}
+
+/* Estilos do container principal */
+.container {
+  width: 800px; /* Largura fixa */
+  margin: 0 auto; /* Centraliza o container horizontalmente */
+}
+
+/* Estilos das colunas */
+.columns {
+  display: flex; /* Usa o modelo de layout flexível */
+  flex-direction: row; /* Direção das colunas */
+  width: 100%; /* Largura total */
+}
+
+.column {
+  width: 30%; /* Largura das colunas */
+  padding: 20px; /* Espaçamento interno */
+  border: 1px solid; /* Borda */
+  background-color: gray; /* Cor de fundo */
+  margin-top: 10px; /* Espaçamento superior */
+}
+
+/* Estilos dos cartões */
+.card {
+  width: 80%; /* Largura dos cartões */
+  height: 100px; /* Altura dos cartões */
+  padding: 20px; /* Espaçamento interno */
+  border: 1px solid #ccc; /* Borda */
+}
+
+/* Estilos dos botões */
+.button {
+  background-color: #000; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  font-size: 16px; /* Tamanho da fonte */
+  padding: 10px; /* Espaçamento interno */
+  border: none; /* Remove a borda */
+  cursor: pointer; /* Altera o cursor para indicar que é clicável */
+  border-radius: 10px; /* Raio da borda */
+}
+
+.add-card {
+  position: absolute; /* Posicionamento absoluto */
+  top: 0; /* Alinha o elemento ao topo */
+  left: 0; /* Alinha o elemento à esquerda */
+}
+
+.btn {
+  padding: 10px 8px; /* Espaçamento interno */
+  width: 100px; /* Largura */
+  color: #fff; /* Cor do texto */
+  background: red; /* Cor de fundo */
+  border: 1px solid #555; /* Borda */
+  border-radius: 5px; /* Raio da borda */
+  text-align: center; /* Alinhamento do texto */
+  user-select: none; /* Impede a seleção de texto */
+  cursor: pointer; /* Altera o cursor para indicar que é clicável */
+  transition: background 1s; /* Transição suave */
+  position: absolute; /* Posicionamento absoluto */
+  right: 5%; /* Distância da borda direita */
+  top: 30%; /* Distância do topo */
+  transform: translateY(-50%); /* Centraliza verticalmente */
+}
+
+.btn:hover {
+  background: #19ee05; /* Cor de fundo ao passar o mouse */
+}
+
+.card-input {
+  width: calc(100% - 22px); /* Largura do campo de entrada */
+  padding: 10px; /* Espaçamento interno */
+  border: none; /* Remove a borda */
+  border-radius: 3px; /* Raio da borda */
+  background-color: #f4f5f7; /* Cor de fundo */
+  box-shadow: 0 1px 0 rgba(9,30,66,.25); /* Sombra */
+  margin-bottom: 8px; /* Espaçamento inferior */
+  resize: none; /* Impede o redimensionamento */
+  font-size: 14px; /* Tamanho da fonte */
+}
+
+.card-input:focus {
+  background-color: #fff; /* Cor de fundo quando em foco */
+  box-shadow: 0 1px 2px rgba(9,30,66,.25), 0 0 0 2px rgba(0,82,204,.3); /* Sombra quando em foco */
+  outline: none; /* Remove o contorno */
+}
